@@ -6,18 +6,18 @@
 
 
 body{
- height: 100vh;
- 
-    display: grid;
-    grid-template-columns: 25% 1fr;
-    grid-template-rows: 10%  1fr 10%;
+ height: 100vh;     /* * damit Grid ganzen Bildschirm füllt */
 
-    grid-template-areas:
+    display: grid;      
+    grid-template-columns: 25% 1fr;     /* * Spalten */
+    grid-template-rows: 10%  1fr 10%;   /* * Zeilen */
+
+    grid-template-areas:        /* * Matrix */
     "header header"
     "aside main"
     "footer footer"
 ;
-color: white;
+color: white;           /*  * alle SchriftFarbe weiß */
 
 }
 
@@ -29,7 +29,7 @@ header{
 aside{
     background-color:green;
     grid-area: aside;
-    height: ;
+
 }
 
 main{
